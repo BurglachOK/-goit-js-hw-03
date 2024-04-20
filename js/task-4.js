@@ -1,5 +1,6 @@
 'use strict'
 console.log("=====4th task=====");
+
 let price = null;
 function getShippingCost(country) {
     switch (country) {

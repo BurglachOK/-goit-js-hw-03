@@ -1,5 +1,6 @@
 'use strict'
 console.log("-----3rd task-----");
+
 function checkForSpam(message) {
     const reMessage = message.toLowerCase();
     if (reMessage.includes("spam") || message.includes("sale")) {
@@ -18,4 +19,5 @@ console.log(checkForSpam("Amazing SalE, only tonight!")); // true
 console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+
 console.log("-----3rd task end-----");
