@@ -2,13 +2,11 @@
 console.log("-----1st task-----");
 
 function slugify(title) {
-  /// return split to lower case
-  //divide split to words
-  //connect words  by "-";
-  slug = title.split(" ");
-  //return 
-  return slug.join("-").toLowerCase();
+  const lowerTitle = title.toLowerCase();
+  const splitTitle = lowerTitle.split(" ");
+  return splitTitle.join("-");
 }
+
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"

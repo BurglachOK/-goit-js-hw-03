@@ -2,15 +2,12 @@
 console.log("-----2nd task-----");
 
 function makeArray(firstArray, secondArray, maxLength) {
-  //massif connect first and second Array
-  totalArray = firstArray.concat(secondArray);
-  //if numbers elements bigger maxLength, return limits massif
-  if (totalArray.length >= maxLength) {
-    return totalArray.slice(0, maxLength);
-  }
-  //returns whole massif
-  else {
-    return totalArray;
+  const mainArray = firstArray.concat(secondArray);
+
+  if (mainArray.length > maxLength) {
+    return mainArray.slice(0, maxLength);
+  } else {
+    return mainArray;
   }
 }
 
